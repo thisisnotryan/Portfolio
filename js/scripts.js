@@ -1,6 +1,7 @@
 // Dynamically load jQuery
 var script = document.createElement('script');
 script.src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js";
+script.type = "text/javascript";  // Ensure this is treated as JS
 script.onload = function() {
     // This function runs once jQuery is loaded
     $(document).ready(function(){
