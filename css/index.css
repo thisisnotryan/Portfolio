@@ -76,6 +76,11 @@ html{
     color: #fff;
 }
 
+.casestudynavbar{
+    background-color: #424243;
+    color: #fff;
+}
+
 .inner-width{
     max-width: 1300px;
     margin: auto;
@@ -272,6 +277,11 @@ section{
     padding-bottom: 20px;
     color: #424243;
     font-weight: 600;
+}
+
+.topmarg{
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 .section-title::before{
@@ -917,6 +927,19 @@ footer{
     color: #424243;
 }
 
+.ZDZWebWire{
+    display: flex;
+}
+
+.ZDZWebWire div{
+     padding: 10px;
+}
+
+.clm {
+    display: flex;
+    flex-direction: column;
+}
+
 .project-detail p{
     line-height: 200%;
     max-width: 900px;
@@ -1039,6 +1062,20 @@ footer{
     position: relative;
 }
 
+.ZDZLogoDrawings{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ZDZLogoDrawings div{
+    padding: 10px;
+}
+
+
+
+
+
 /*Media Query*/
 @media screen and (max-width: 980px){
     .menu-toggler{
@@ -1123,6 +1160,18 @@ footer{
     .blogs{
     width: 100%;
     height: 400px;
+    }
+    
+    .ZDZLogoDrawings{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+    }
+    
+    .ZDZWebWire{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     }
     
 }
