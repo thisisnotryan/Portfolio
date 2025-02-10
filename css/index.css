@@ -867,6 +867,32 @@ footer{
     background: url(../images/ZARA/ZARA-Product%20Image.png) no-repeat center center/cover;
 }
 
+/*WildWetWet Slides Image */
+.www:first-child {
+    background: url(../images/WildWetWet/Menu-Screen.png) no-repeat center center/cover;
+}
+
+.www:nth-child(2) {
+    background: url(../images/WildWetWet/E-Interact.png) no-repeat center center/cover;
+}
+
+.www:nth-child(3) {
+    background: url(../images/WildWetWet/Got-Hit.png) no-repeat center center/cover;
+}
+
+/*CapitaQ Slides Image */
+.capitaq:first-child {
+    background: url(../images/CapitaQ/CaptitaQ-1.png) no-repeat center center/cover;
+}
+
+.capitaq:nth-child(2) {
+    background: url(../images/CapitaQ/CapitaQ-2.png) no-repeat center center/cover;
+}
+
+.capitaq:nth-child(3) {
+    background: url(../images/CapitaQ/CapitaQ-3.png) no-repeat center center/cover;
+}
+
 
 .mobileview{
     display: flex;
