@@ -661,6 +661,7 @@ footer{
 }
 */
 
+
 .slider {
     position: relative;
     overflow: hidden;
@@ -1072,9 +1073,175 @@ footer{
     padding: 10px;
 }
 
+.cancelspace{
+    justify-content: space-evenly;
+}
+
+/* High Hopes Img Slider Code */
+#imggallery{
+    margin: 0 auto;
+    width: 800px;
+    max-width: 100%;
+    text-align: center;
+}
+
+#imggallery input[type=radio]{
+    display: none;
+}
+
+#imggallery label{
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#imgslides {
+    padding: 10px;
+    border: 3px solid #ccc;
+    position: relative;
+    z-index: 1;
+}
+
+#overflow{
+    width: 100%;
+    overflow: hidden;
+}
+
+#imgslide1:checked ~ #imgslides .inner {
+    margin-left: 0;
+}
+
+#imgslide2:checked ~ #imgslides .inner {
+    margin-left: -100%;
+}
+
+#imgslide3:checked ~ #imgslides .inner {
+    margin-left: -200%;
+}
+
+#imgslide4:checked ~ #imgslides .inner {
+    margin-left: -300%;
+}
+
+#imgslide5:checked ~ #imgslides .inner {
+    margin-left: -400%;
+}
+
+#imgslides .inner{
+    transition: margin-left 800ms cubic-bezier(0.770,0.000,0.175,1.000);
+    width: 500%;
+    height: 510px;
+}
+
+#imgslides .imgslide {
+    width: 20%;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items:flex-end;
+    height: 100%;
+    color: #FFF;
+}
+
+#imgslides .imgslide_1{
+    background-image: url(../images/highhopes/HH-CharacterConcept.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top;
+}
+
+#imgslides .imgslide_2{
+    background-color: #003459;
+}
+
+#imgslides .imgslide_3{
+    background-color: #007EA7;
+}
+
+#imgslides .imgslide_4{
+    background-color: #00A8E8;
+}
+
+#imgslides .imgslide_5{
+    background-color: royalblue;
+}
+
+.imgslide-content{
+    background-color: #424243;
+    width: 100%;
+    height: 30%;
+    padding: 20px 20px 10px 20px;
+}
 
 
+#controls {
+    margin: -130px 0 0 0;
+    width: 100%;
+    height: 50px;
+    z-index: 3;
+    position: relative;
+}
 
+#controls label{
+    transition: opacity 0.2s ease-out;
+    display: none;
+    width: 50px;
+    height: 50px;
+    opacity: .4;
+}
+
+#controls label:hover{
+    opacity: 1;
+}
+
+#imgslide1:checked ~ #controls label:nth-child(2),
+#imgslide2:checked ~ #controls label:nth-child(3),
+#imgslide3:checked ~ #controls label:nth-child(4),
+#imgslide4:checked ~ #controls label:nth-child(5),
+#imgslide5:checked ~ #controls label:nth-child(1) {
+    background-image: url(../images/right-arrow.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    float: right;
+    margin:  -100px -50px 0 0;
+    display: block;
+}
+
+#imgslide1:checked ~ #controls label:nth-child(5),
+#imgslide2:checked ~ #controls label:nth-child(1),
+#imgslide3:checked ~ #controls label:nth-child(2),
+#imgslide4:checked ~ #controls label:nth-child(3),
+#imgslide5:checked ~ #controls label:nth-child(4) {
+    background-image: url(../images/left-arrow.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    float: left;
+    margin: -100px 0 0 -50px;
+    display: block;
+}
+
+#bullets{
+    margin: 100px 0 0;
+    text-align: center;
+}
+
+#bullets label{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background: #CCC;
+    margin: 0 10px;
+}
+
+#imgslide1:checked ~ #bullets label:nth-child(1),
+#imgslide2:checked ~ #bullets label:nth-child(2),
+#imgslide3:checked ~ #bullets label:nth-child(3),
+#imgslide4:checked ~ #bullets label:nth-child(4),
+#imgslide5:checked ~ #bullets label:nth-child(5) {
+    background-color: #FED700;
+}
 
 /*Media Query*/
 @media screen and (max-width: 980px){
@@ -1174,6 +1341,21 @@ footer{
     align-items: center;
     }
     
+    #imgslide1:checked ~ #controls label:nth-child(2),
+    #imgslide2:checked ~ #controls label:nth-child(3),
+    #imgslide3:checked ~ #controls label:nth-child(4),
+    #imgslide4:checked ~ #controls label:nth-child(5),
+    #imgslide5:checked ~ #controls label:nth-child(1) {
+        margin: 0;
+    }
+    
+    #imgslide1:checked ~ #controls label:nth-child(5),
+    #imgslide2:checked ~ #controls label:nth-child(1),
+    #imgslide3:checked ~ #controls label:nth-child(2),
+    #imgslide4:checked ~ #controls label:nth-child(3),
+    #imgslide5:checked ~ #controls label:nth-child(4) {
+        margin: 0;
+    }
 }
 
 @media screen and (max-width: 700px){
