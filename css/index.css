@@ -1203,7 +1203,7 @@ footer{
     background-size: contain;
     background-repeat: no-repeat;
     float: right;
-    margin:  -100px -50px 0 0;
+    margin:  -150px -50px 0 0;
     display: block;
 }
 
@@ -1217,7 +1217,7 @@ footer{
     background-size: contain;
     background-repeat: no-repeat;
     float: left;
-    margin: -100px 0 0 -50px;
+    margin: -150px 0 0 -50px;
     display: block;
 }
 
