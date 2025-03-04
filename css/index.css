@@ -1069,12 +1069,30 @@ footer{
     align-items: center;
 }
 
+.flexrow {
+    display: flex;
+    flex-direction: row;
+}
+
+.flexcolumn {
+    display: flex;
+    flex-direction: column;
+}
+
 .ZDZLogoDrawings div{
     padding: 10px;
 }
 
 .cancelspace{
     justify-content: space-evenly;
+}
+
+.alignleft{
+    text-align: left;
+}
+
+.alignright{
+    text-align: right;
 }
 
 /* High Hopes Img Slider Code */
@@ -1150,20 +1168,34 @@ footer{
 }
 
 #imgslides .imgslide_2{
-    background-color: #003459;
+    background-image: url(../images/highhopes/HH-EnvironmentConcept.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top;
 }
 
 #imgslides .imgslide_3{
-    background-color: #007EA7;
+    background-image: url(../images/highhopes/LevelDesign-Concept.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top;
 }
 
+
 #imgslides .imgslide_4{
-    background-color: #00A8E8;
+    background-image: url(../images/highhopes/UI-concept.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top;
 }
 
 #imgslides .imgslide_5{
-    background-color: royalblue;
+    background-image: url(../images/highhopes/SplashArt-Concept.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top;
 }
+
 
 .imgslide-content{
     background-color: #424243;
@@ -1172,6 +1204,25 @@ footer{
     padding: 20px 20px 10px 20px;
 }
 
+.envconp {
+    height: 40%;
+}
+
+.lvlconp {
+    height: 10%;
+    padding: 10px 0 0 0;
+    background-color: rgba(0,0,0,0.3);
+}
+
+.uiconp {
+    height: 15%;
+    padding: 20px 0 0 0;
+}
+
+.splashartconp {
+    height: 15%;
+    padding: 20px 0 0 0;
+}
 
 #controls {
     margin: -130px 0 0 0;
@@ -1221,6 +1272,7 @@ footer{
     display: block;
 }
 
+
 #bullets{
     margin: 100px 0 0;
     text-align: center;
@@ -1241,6 +1293,10 @@ footer{
 #imgslide4:checked ~ #bullets label:nth-child(4),
 #imgslide5:checked ~ #bullets label:nth-child(5) {
     background-color: #FED700;
+}
+
+.floatrow {
+    flex-direction: row;
 }
 
 /*Media Query*/
